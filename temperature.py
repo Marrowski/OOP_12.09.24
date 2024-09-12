@@ -1,4 +1,4 @@
-class Temperature:
+class Temperature: #Inputing in celcius
     def __init__(self, temperature):
         self.temperature = temperature
 
