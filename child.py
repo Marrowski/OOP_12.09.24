@@ -1,29 +1,14 @@
 class Base:
-    def __init__(self, greeting):
-        self.greeting = greeting
-
     @classmethod
-    def method(cls, greeting):
-        cls.greeting = greeting
-
-    def __str__(self):
-        return f'{self.greeting}'
+    def method(cls):
+        print('Hello from Base')
 
 
 class Child:
-    def __init__(self, greeting):
-        self.greeting = greeting
-
     @classmethod
-    def method(cls, greeting):
-        cls.greeting = greeting
-
-    def __str__(self):
-        return f'{self.greeting}'
+    def method(cls):
+        print('Hello from Child')
 
 
-base1 = Base('Hello from base')
-child1 = Child('Hello from child')
-
-print(base1)
-print(child1)
+Base.method()
+Child.method()
